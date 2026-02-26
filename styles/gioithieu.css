@@ -1,0 +1,486 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.intro {
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    background-image: url(home-background.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+}
+
+body {
+    margin: 0px
+}
+
+hr {
+    margin: 0px
+}
+
+nav {
+    position: absolute;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header>a>img {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.dash:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.menu>a:hover {
+    color: red;
+    transform: scale(1.05);
+    background-color: rgb(237, 237, 157);
+}
+
+.menu>a {
+    display: block;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    position: relative;
+}
+
+.menu>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #c89b3c;
+    transition: 0.3s;
+}
+
+.menu>a:hover::after {
+    width: 100%;
+}
+
+.dash>span {
+    display: block;
+    margin-left: 80px;
+    height: 6px;
+}
+
+.header>nav {
+    position: relative;
+    left: 85%;
+    margin-bottom: 30px;
+}
+
+.menu {
+    position: absolute;
+    top: 170%;
+    right: -20px;
+    z-index: 10;
+    display: none;
+    background-color: #eee;
+    padding: 10px;
+    width: 250px;
+    height: 1000px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+#menu-toggle:checked+.dash+.menu {
+    display: block;
+}
+
+.header>div {
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    left: 42%;
+
+}
+
+.header>div>p {
+    display: inline-block;
+    font-family: "Bungee", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin: 2px;
+    color: rgb(234, 36, 36);
+    font-size: 22px;
+    width: 160px;
+}
+
+.header>div>nav {
+    overflow: hidden;
+    text-align: center;
+}
+
+.intro-container {
+    display: grid;
+    place-items: center;
+    font-family: "Bungee", sans-serif;
+    font-weight: 250px;
+    color: rgb(241, 236, 134);
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 0px;
+    margin-top: 50px;
+}
+
+.content-button {
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 227px;
+    transition: 0.3s;
+}
+
+.content-button-container {
+    margin-bottom: 200px;
+}
+
+.content-button>a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.content-button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+body {
+    background-color: #f6f4ef;
+}
+
+.gioithieu-style>p {
+    font-family: "Plus Jakarta Sans";
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.header>div>img {
+    width: 60px;
+}
+
+.menu-list {
+    width: auto;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    z-index: 1;
+    background-color: #eee;
+}
+
+.menu-list>a {
+    font-family: "Plus Jakarta Sans";
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(175, 53, 9);
+    margin-top: 21px;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu-list>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0%;
+    height: 2px;
+    background: #c89b3c;
+    transition: 0.3s;
+}
+
+.menu-list>a:hover::after {
+    width: 100%;
+}
+
+.menu-list>a:hover {
+    opacity: 0.7;
+}
+
+.sec-intro-container {
+    margin-left: 55px;
+}
+
+body>p {
+    font-family: "Plus Jakarta Sans";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: large;
+}
+
+.content-intro {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 12px;
+}
+
+.content-intro>a>div>img {
+    display: inline-block;
+    width: 478px;
+}
+
+.content-intro>a>div {
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.content-intro>a>div>.p-head {
+    position: absolute;
+    top: 96%;
+    left: 20%;
+    right: 20%;
+    font-family: "Plus Jakarta Sans";
+    font-size: 15px;
+    margin-top: 15px;
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c89b3c;
+}
+
+.content-intro>a>div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.back-to-top {
+    position: fixed;
+    top: 95%;
+    left: 96%;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 21px;
+    color: rgb(108, 126, 76);
+    z-index: 1;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgb(3, 2, 2);
+    border-style: solid;
+    font-size: 25px;
+    width: 33px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: rgb(244, 240, 58);
+}
+
+.back-to-top:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.content-header {
+    font-family: "Plus Jakarta Sans";
+    text-transform: uppercase;
+    margin: 40px 150px;
+    font-weight: bold;
+
+}
+
+.mc-gioithieu {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: #e6bd65;
+    transition: 0.3s;
+    border: 10px solid white;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.mc-gioithieu:hover {
+    transform: scale(1.05);
+
+}
+
+.mc-gioithieu>img {
+    width: 50%;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.content {
+    display: inline-block;
+    width: 50%;
+    font-family: "Plus Jakarta Sans";
+    text-align: left;
+    line-height: 27px;
+    word-spacing: 3px;
+    margin-left: 25px;
+    border-left: rgb(206, 61, 28) solid;
+    border-bottom: rgb(206, 61, 28) solid;
+    ;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.mc-gioithieu>img:hover {
+    transform: scale(1.02);
+}
+
+.image {
+    display: flex;
+    gap: 20px;
+}
+
+.image>img {
+    flex: 1;
+    width: 16%;
+    transition: 0.3s;
+    height: auto;
+}
+
+.image>img:hover {
+    flex: 5;
+    transform: scale(1.05);
+}
+
+.mc-hinhanh-content {
+    display: inline-block;
+    border-left: red solid;
+    border-bottom: red solid;
+    border-radius: 3px;
+    height: fit-content;
+    font-family: "Plus Jakarta Sans";
+    text-align: left;
+    line-height: 27px;
+    word-spacing: 3px;
+    margin-left: 25px;
+    border-left: rgb(206, 61, 28) solid;
+    border-bottom: rgb(206, 61, 28) solid;
+    ;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.mc-hinhanh {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: #e6bd65;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 10px solid white;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.mc-hinhanh>img {
+    width: 100px;
+}
+
+.mc-hinhanh>.video-style {
+    width: 350px;
+    padding-right: 30px;
+    margin-left: 30px;
+}
+.tet-footer {
+    background: linear-gradient(to right, #8B0000, #B22222); 
+    color: #fff;
+    margin-top: 60px;
+    padding-top: 40px;
+    font-family: "Plus Jakarta Sans";
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    width: 80%;
+    margin: auto;
+}
+h3{
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+.tet-footer>.footer-container>.footer-col>p{
+    line-height: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+
+.footer-col h3,
+.footer-col h4 {
+    color: #FFD700; 
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: large;
+}
+
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #FFD700;
+    padding-left: 5px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 20px;
+    font-size: 14px;
+}
